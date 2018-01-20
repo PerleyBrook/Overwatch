@@ -1,1 +1,1 @@
-import "./lib/index";
+import "./lib/src/index";

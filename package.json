@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "lint": "./node_modules/.bin/tslint -p tsconfig.json -c tslint.json",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "precommit": [
-      "lint",
-      "test"
-    ]
+    "test": "jest"
   },
+  "precommit": [
+    "lint",
+    "test"
+  ],
   "dependencies": {
     "react": "16.2.0",
     "react-native": "0.52.0"

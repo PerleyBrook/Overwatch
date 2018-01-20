@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "lint": "./node_modules/.bin/tslint -p tsconfig.json -c tslint.json",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "tsc && node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "precommit": [
@@ -13,7 +13,8 @@
   ],
   "dependencies": {
     "react": "16.2.0",
-    "react-native": "0.52.0"
+    "react-native": "0.52.0",
+    "react-native-linear-gradient": "^2.4.0"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.7",

@@ -27,11 +27,16 @@ const styles = StyleSheet.create({
       paddingVertical: 0,
   },
   greeting: {
-      color: "#999",
-      fontWeight: "bold",
+    color: "#999",
+    fontWeight: "bold",
   },
 });
 
+// helpers
+
+export const getExclamationMarks = (numChars: number) => {
+  return Array(numChars + 1).join("!");
+};
 function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
   if (enthusiasmLevel <= 0) {
     throw new Error("You could be a little more enthusiastic. :D");
@@ -55,9 +60,3 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
 }
 
 export default Hello;
-
-// helpers
-
-export const getExclamationMarks = (numChars: number) => {
-  return Array(numChars + 1).join("!");
-};

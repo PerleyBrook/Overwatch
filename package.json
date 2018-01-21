@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "lint": "./node_modules/.bin/tslint -p tsconfig.json -c tslint.json",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "concurrently --kill-others \"tsc  --watch\" \"node node_modules/react-native/local-cli/cli.js start\"",
     "test": "jest"
   },
   "precommit": [
@@ -13,7 +13,9 @@
   ],
   "dependencies": {
     "react": "16.2.0",
-    "react-native": "0.52.0"
+    "react-native": "0.52.0",
+    "react-native-linear-gradient": "^2.4.0",
+    "react-native-pagination": "^1.2.8"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.7",
@@ -24,6 +26,7 @@
     "@types/react-test-renderer": "^16.0.0",
     "babel-jest": "22.1.0",
     "babel-preset-react-native": "4.0.0",
+    "concurrently": "^3.5.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jest": "22.1.4",

@@ -1,21 +1,15 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import * as React from "react";
 
 import ContainerView from "./components/ContainerView";
 import { IContainerViewProps } from "./components/ContainerView";
-import { PRICE_DECREASED } from "./constants/index";
+import { PRICE_INCREASED } from "./constants";
 
 export default class App extends React.Component<{}, {}> {
 
   public render() {
     let priceStatus: IContainerViewProps;
     priceStatus = {
-      status: PRICE_DECREASED,
+      status: PRICE_INCREASED,
     };
     return (
       <ContainerView {...priceStatus} />

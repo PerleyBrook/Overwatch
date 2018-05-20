@@ -1,4 +1,3 @@
-
 export const PRICE_INCREASED = "PRICE_INCREASED";
 export const PRICE_DECREASED = "PRICE_DECREASED";
 

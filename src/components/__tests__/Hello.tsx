@@ -1,5 +1,5 @@
 import { configure, shallow } from "enzyme";
-import * as ReactSixteenAdapter from "enzyme-adapter-react-16";
+import ReactSixteenAdapter from "enzyme-adapter-react-16";
 import * as React from "react";
 import { Text } from "react-native";
 

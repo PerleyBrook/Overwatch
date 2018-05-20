@@ -24,7 +24,7 @@ interface IContainerViewState {
 export default class ContainerView extends React.Component<IContainerViewProps, IContainerViewState> {
   private statusColor: string[];
   private readonly increasedColor: string[] = ["#a11514", "#aa691c"];
-  private readonly decreasedColor: string[] = ["#5d990c", "#a5231c"];
+  private readonly decreasedColor: string[] = ["#5d990c", "#A0F0B1"];
   constructor(props: IContainerViewProps) {
     super(props);
     this.statusColor = props.status === PRICE_INCREASED ? this.increasedColor : this.decreasedColor;

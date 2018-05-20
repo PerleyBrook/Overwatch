@@ -9,7 +9,6 @@ export interface Props {
   onDecrement?: () => void;
 }
 // styles
-
 const styles = StyleSheet.create({
   root: {
       alignItems: "center",
@@ -33,7 +32,6 @@ const styles = StyleSheet.create({
 });
 
 // helpers
-
 export const getExclamationMarks = (numChars: number) => {
   return Array(numChars + 1).join("!");
 };

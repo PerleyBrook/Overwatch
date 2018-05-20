@@ -10,7 +10,7 @@ configure({ adapter: new ReactSixteenAdapter() });
 it("renders correctly with decrement color", () => {
   const containerView = shallow(<ContainerView status={constants.PRICE_DECREASED} />);
   const linearGradient = containerView.find("LinearGradient");
-  expect(linearGradient.prop("colors")).toEqual(["#5d990c", "#a5231c"]);
+  expect(linearGradient.prop("colors")).toEqual(["#5d990c", "#A0F0B1"]);
 });
 
 it("renders correctly with increment color", () => {
